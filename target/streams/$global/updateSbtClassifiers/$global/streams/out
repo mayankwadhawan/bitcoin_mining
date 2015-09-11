@@ -703,9 +703,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.13.8!test-agent.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
-[debug] :: resolution report :: resolve 724ms :: artifacts dl 33ms
+[debug] :: resolution report :: resolve 331ms :: artifacts dl 14ms
 [debug] 	report for default#bitcoin$sbt_2.11;1.0 default produced in /home/mayank/Documents/UF Ubuntu/DOS/projects/bitcoin/target/resolution-cache/reports/default-bitcoin$sbt_2.11-default.xml
-[debug] 	resolve done (724ms resolve - 33ms download)
+[debug] 	resolve done (331ms resolve - 14ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#bitcoin$sources_2.11;1.0
 [debug] 	confs: [default]
@@ -1069,6 +1069,6 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_8_2;0.13.8!precompiled-2_8_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_2;0.13.8!precompiled-2_9_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_3;0.13.8!precompiled-2_9_3.jar(src)
-[debug] :: resolution report :: resolve 154ms :: artifacts dl 25ms
+[debug] :: resolution report :: resolve 70ms :: artifacts dl 11ms
 [debug] 	report for default#bitcoin$sources_2.11;1.0 default produced in /home/mayank/Documents/UF Ubuntu/DOS/projects/bitcoin/target/resolution-cache/reports/default-bitcoin$sources_2.11-default.xml
-[debug] 	resolve done (154ms resolve - 25ms download)
+[debug] 	resolve done (70ms resolve - 11ms download)

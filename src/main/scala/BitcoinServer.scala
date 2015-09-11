@@ -47,7 +47,7 @@ class Master extends Actor with ActorLogging{
   val startTime=System.currentTimeMillis()
   var currentTasks:Int=_
   val noOfWorkers: Int=10
-  val noOfTasks: Int=3000
+  val noOfTasks: Int=1000
   val sizeOfWork: Int=10000
   val leadingZeros=5
   var duration: Double=_
@@ -75,9 +75,13 @@ class Master extends Actor with ActorLogging{
         displaySolution(coins)
         duration=(System.currentTimeMillis()-startTime)/1000d
         println("Time taken=%s seconds".format(duration))
-        context.stop(self)
-        context.system.shutdown()
+       // context.stop(self)
+       // context.system.shutdown()
       }
+    case msg: String =>
+      println(s"Server received message: '$msg'")
+      sender ! "Hello from server"
+
   }
 }
 
@@ -85,5 +89,6 @@ object BitcoinServer extends App{
   val system=ActorSystem("Bitcoin-server")
   val masterActor=system.actorOf(Props(new Master),"masterActor")
   masterActor ! MineCoins
+  masterActor ! "Server is alive"
   system.awaitTermination()
 }
